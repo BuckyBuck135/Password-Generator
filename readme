@@ -5,8 +5,6 @@
  - Kevin Powell: How to create a theme switcher with HTML & CSS
 https://www.youtube.com/watch?v=fyuao3G-2qg&t=587s
 
-/***** KNOWN ISSUES *****/
- - "Inter" font not displaying in local environment. Displaying fine on Scrimba's editor.
 
  /***** TO-DO *****/
- 
+Implement local storage for theme preference 
