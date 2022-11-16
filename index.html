@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:ital,wght@0,800;1,400&display=swap" rel="stylesheet">
+        <link href="images/favicon.png" rel="icon" type="image/x-icon">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <form class="color-picker">
+            <fieldset>
+                <legend class="visually-hidden">Pick a color scheme</legend>
+                <label for="theme" class="visually-hidden">Dark</label>
+                <input type="radio" name="theme" id="dark" checked>
+                <label for="theme" class="visually-hidden">Light</label>
+                <input type="radio" name="theme" id="light">    
+            </fieldset>
+        </form>
+        <div class="center-container">
+            <main>
+                <h1>Generate a <br><span>random password</span></h1>
+                <p>Never use an insecure password again.</p>
+                <button id="generate-btn" onclick="generatePasswords()">Generate passwords</button>
+                <div class="password-container">
+                    <div class="card">
+                        <div class="password-field">
+                            <p id="password-1"></p>
+                        </div>
+                        <button id="copy-password-1" class="copy-btn" onclick="copyPassword(password1.textContent)">COPY</button>
+                    </div>
+                    <div class="card">
+                        <div class="password-field">
+                            <p id="password-2"></p>
+                        </div>
+                        <button id="copy-password-2" class="copy-btn" onclick="copyPassword(password2.textContent)">COPY</button>
+                    </div>
+                </div>
+                <div id="toast-container">
+                    <p></p>
+                </div>
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
+
