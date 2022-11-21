@@ -146,6 +146,23 @@ main > p, button, .password-field {
 }
 
 /***** COLOR PALETTE *****/
+.dark {
+    --clr-body-bg: #1F2937;
+    --clr-body-text: white;
+    --clr-btn-bg: #064E3B;
+    --clr-border: #2F3E53;
+    --clr-text: #4ADF86;
+    --clr-password-bg: #273549;
+}
+
+.light {
+    --clr-body-bg: #e6e6e6;
+    --clr-body-text: #000005;
+    --clr-btn-bg: #0284C7;
+    --clr-border: #2F3E53;
+    --clr-text: #0284C7;
+    --clr-password-bg: #ffffff;
+}
 /*Default dark theme*/
 :root {
     --clr-body-bg: #1F2937;
