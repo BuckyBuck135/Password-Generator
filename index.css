@@ -167,6 +167,7 @@ main > p, button, .password-field {
     --clr-password-bg: #ffffff;
 }
 
+/*Fallback classes for no :has() support*/
 .dark {
     --clr-body-bg: #1F2937;
     --clr-body-text: white;
