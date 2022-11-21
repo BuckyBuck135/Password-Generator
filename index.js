@@ -53,15 +53,18 @@ function showToastContainer() {
     }, 4000);
 }
 
+
+//// Color picker localStorage ////
+
 const colorThemes = document.querySelectorAll('[name="theme"]');
 
 // store theme
-const storeTheme = function (theme) {
+function storeTheme(theme) {
   localStorage.setItem("theme", theme);
 };
 
 // set theme when visitor returns
-const setTheme = function () {
+function setTheme() {
   const activeTheme = localStorage.getItem("theme");
   colorThemes.forEach((themeOption) => {
     if (themeOption.id === activeTheme) {
