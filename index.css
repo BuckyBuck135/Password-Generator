@@ -92,8 +92,9 @@ h1 {
     margin: 0;
 }
 
-span {
+h1 span {
     color: var(--clr-text);
+    display: block;
 }
 
 main > p, button, .password-field {

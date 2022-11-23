@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 //Constants for manipulating the DOM
+const generateBtn = document.getElementById("generate-btn")
 const password1 = document.getElementById("password-1");
 const password2 = document.getElementById("password-2");
 let toastDiv = document.getElementById("toast-container");
@@ -19,22 +20,22 @@ function getRandomCharacter() {
 
 function generatePasswords() {
     //creates constants for storing the characters
-    let randomPassword1="";
-    let randomPassword2=""
+    let password=""
 
     // loops the getRandomCharacter function and stores the characters in the constants
     //passwordLength is hard-coded for now. Later to be defined by user input
     for (let i=0; i<passwordLength;i++) {
-        randomPassword1 += getRandomCharacter();
+        password += getRandomCharacter();
     }
-    for (let i=0; i<passwordLength;i++) {
-        randomPassword2 += getRandomCharacter();
-    }
+    return password;
+  }
 
+generateBtn.addEventListener("click", function() {
     //displays the constants
-    password1.textContent = randomPassword1;
-    password2.textContent = randomPassword2;
-}
+    password1.textContent = generatePasswords();
+    password2.textContent = generatePasswords();
+})
+
 
 function copyPassword(passwordText) {
     navigator.clipboard.writeText(passwordText);
