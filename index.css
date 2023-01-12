@@ -227,9 +227,7 @@ main > p, button, .password-field {
     gap: 0;
     justify-content: center;
 }
-}
 
-@media screen and (min-width: 480px) {
 
 .center-container {
     max-width: 60vw;
